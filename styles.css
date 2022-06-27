@@ -6,6 +6,7 @@
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+  --light-blue: hsl(217, 19%, 23%);
 }
 
 /* CSS RESET */
@@ -136,7 +137,70 @@ table {
 
 /* GENERAL CSS */
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Overpass", sans-serif;
   background-color: var(--very-dark-blue);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  width: 30%;
+  height: 400px;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.star {
+  background-color: var(--light-blue);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 20px;
+}
+
+.main-heading {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: var(--medium-grey);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+  color: var(--light-grey);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px 0;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
