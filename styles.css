@@ -194,6 +194,17 @@ body {
   margin-bottom: 30px;
 }
 
+.number:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.number:focus {
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
 .main-btn {
   background-color: var(--orange);
   border: none;
@@ -203,4 +214,10 @@ body {
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.main-btn:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
 }
