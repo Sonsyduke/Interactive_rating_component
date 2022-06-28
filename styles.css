@@ -221,3 +221,31 @@ body {
   background-color: var(--white);
   color: var(--orange);
 }
+
+.normal-state {
+  display: none;
+}
+
+/* SUBMIT STATE */
+.submit-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.rating-message {
+  color: var(--orange);
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.thank-you-heading {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.submit-state .desc {
+  text-align: center;
+}
