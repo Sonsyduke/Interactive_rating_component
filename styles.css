@@ -222,10 +222,6 @@ body {
   color: var(--orange);
 }
 
-.normal-state {
-  display: none;
-}
-
 /* SUBMIT STATE */
 .submit-state {
   display: flex;
@@ -248,4 +244,33 @@ body {
 
 .submit-state .desc {
   text-align: center;
+}
+
+.state {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px) {
+  .main-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    width: 90%;
+  }
 }
